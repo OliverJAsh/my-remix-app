@@ -1,4 +1,4 @@
-import { Links, Meta, Outlet, Scripts } from "@remix-run/react";
+import { Link, Links, Meta, Outlet, Scripts } from "@remix-run/react";
 import React from "react";
 
 export default function App() {
@@ -11,6 +11,9 @@ export default function App() {
       </head>
       <body>
         <h1>Hello world!</h1>
+        <div>
+          <Link to="/projects/new">Go to new projects form</Link>
+        </div>
         <Outlet />
 
         <Scripts />
